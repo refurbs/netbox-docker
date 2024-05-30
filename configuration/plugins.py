@@ -12,7 +12,7 @@
 #   }
 # }
 
-PLUGINS = ["netbox_secrets"]
+#PLUGINS = ["netbox_secrets"]
 
 # PLUGINS_CONFIG = {
 #   "netbox_secretstore": {
