@@ -74,6 +74,7 @@ services:
     ports:
       - 13031:8000
     depends_on:
+      - netbox
       - netbox-postgres
       - netbox-redis
     restart: unless-stopped
