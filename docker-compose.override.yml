@@ -1,5 +1,25 @@
 version: "3.7"
 services:
+  netbox:
+    image: netbox:latest-plugins
+    ports:
+      - 8000:8080
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins
+      
+  netbox-worker:
+    image: netbox:latest-plugins
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins
+      
+  netbox-housekeeping:
+    image: netbox:latest-plugins
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins
+      
   netbox-postgres:
     image: postgres:15-alpine
     container_name: netbox_postgres
