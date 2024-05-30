@@ -11,3 +11,14 @@
 #     ADD YOUR SETTINGS HERE
 #   }
 # }
+
+PLUGINS = ["netbox_secrets"]
+
+# PLUGINS_CONFIG = {
+#   "netbox_secretstore": {
+#     ADD YOUR SETTINGS HERE
+#   }
+# }
+
+# In your configuration.py
+PLUGINS = ["netbox_topology_views"]
