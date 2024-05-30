@@ -3,7 +3,7 @@ services:
   netbox:
     image: netbox:latest-plugins
     ports:
-      - 8000:8080
+      - 13032:8080
     build:
       context: .
       dockerfile: Dockerfile-Plugins
